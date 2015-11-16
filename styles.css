@@ -1,0 +1,310 @@
+/****************************************
+  Inherited Syles
+*****************************************/
+
+/****************************************
+  Defaults
+*****************************************/
+body {
+	font-family: 'Lobster', cursive;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+.tiles-container {
+	/*box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.75);*/
+	
+}
+/****************************************
+  Helpers
+*****************************************/
+.service-boxes a {
+	background-color: #fff;
+	text-decoration: none;
+	/*rgba(255, 52, 0, 1);*/
+	border-radius: 5px;
+	padding: 4px;
+	
+} 
+
+.media-content {
+	flex:1;
+	background-color: #E8F3F9;
+}
+/****************************************
+  Layout
+*****************************************/
+
+/**
+* Doubble Box
+**/
+
+.hero {
+/*background-image: radial-gradient(rgba(0, 142, 172, 0.0), rgba(0, 142) url('bg.jpg') center no-repeat; 
+background-size: cover;*/
+	background: radial-gradient(rgba(3, 142, 168, 0.5),
+	    rgba(3, 142, 168, 1)), url('bg.jpg') 
+	    no-repeat center;  
+}
+
+.hero > div {
+	margin: 0 auto;
+/*	background-color: orange;*/
+	width: 960px;
+	height: 450px;
+	position: relative;
+}
+
+.primary-content {
+	background-color: #D7E1E7;
+}
+
+.content-area {
+	margin: 0 auto;
+	background-color: #fff;
+	width: 960px;
+
+}
+
+/**
+* Header
+**/
+
+.primary-header {
+	position: relative;
+}
+
+.header-top {
+	font-family: lobster;
+	position: relative;
+	left: 0;
+	top: 0;
+	color: #fff;
+}
+
+.header-top h1 {
+	margin: 0;
+	font-size: 50px;
+}
+
+#header-search::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+#header-search {
+	background-color: transparent;
+	box-shadow: inset 0 0 0 0;
+	/*::-webkit-input-placeholder:*/ ;
+	border: solid rgba(255, 255, 255, 0.3) 1px;
+	height: 25px;
+}
+
+.header-button {
+	background-color: rgba(255, 52, 0, 1);
+	color: white;
+	height: 27.5px;
+	border-radius: 2px;
+	border: solid rgba(255, 52, 0, 1) 1px;
+}
+
+.tabs {
+	/*background-color: green;*/
+	/*height: 62px;*/
+	position: absolute
+	bottom: 10px;
+	left: 20px;
+	text-align: center;
+	transform: translateY(25px);
+	border-top: solid rgba(255, 255, 255, 0.3) 1px;
+	border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
+	/*padding-bottom: 4px;
+*/}
+
+.tabs a {
+	display: inline-block;
+	margin: 21px;
+	margin-bottom: 22px;
+	font-family: Open Sans;
+	text-decoration: none;
+	color: white;
+}
+
+.headerinput {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+
+/**
+* Welcome Banner
+**/
+
+.welcomebanner {
+	/*background-color: magenta;*/
+	position: absolute;
+	width: 100%;
+	bottom: 28px;
+	text-align: center;
+}
+
+.welcomebanner > p {
+	font-size: 16px;
+	color: white;
+}
+
+.welcomebanner span {
+	font-family: Open Sans;
+	font-weight: 400;
+	color: white;
+	font-size: 2em;
+}
+
+/**
+* Service boxes
+**/
+.service-boxes {
+	width: 290px;
+	height: 190px;
+	display: inline-block;
+	background-color: #fff;
+	margin-left: 9px;
+	margin-right: 9px;
+	transform: translateY(-20px);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5)
+}
+.service-area {
+	width: 100%;
+	height: 195px;
+	/*background-color: green;*/
+	text-align: center;
+	background-color: #D7E1E7;
+
+}
+
+.service-boxes.litter-color {
+	border-top: rgba(236, 70, 23, 1) 3px solid;
+	
+}
+
+.litter-color a {
+	color: rgba(255, 52, 0, 1);
+	border: solid rgba(236, 70, 23, 1) 2px;
+}
+
+.food-color {
+	border-top: rgba(175, 222, 137, 1) 3px solid;
+}
+
+.food-color a {
+	color: rgba(175, 222, 137, 1);
+	border: solid rgba(175, 222, 137, 1) 2px;
+}
+
+.sell-color {
+	border-top: rgba(82, 181, 223, 1) 3px solid;
+}
+
+.sell-color a {
+	color: rgba(82, 181, 223, 1);
+	border: solid rgba(82, 181, 223, 1) 2px;
+}
+/****************************************
+  Components
+*****************************************/
+
+/**
+* Media objects aside 
+**/
+
+.dog-content {
+	display: flex;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5)
+}
+
+.media-objects >  * + * {
+	margin-top: 10px;
+}
+
+.media-name {
+	color: #65B3DC;
+}
+
+.media-objects {
+	width: 400px;
+	height: 350px;
+	/*background-color: red;*/
+	padding: 10px;
+}
+
+/**
+ media object
+ */
+.media-object{
+	/*background-color: orange;*/
+	height: 90px;
+	display: flex;
+}
+
+.media-object .media-image {
+	width: 90px;
+	height: 90px;
+	background-color: white;
+}
+
+.media-caption {
+	padding-left: 8px;
+}
+
+.media-name {
+	background-color: #E8F3F9;
+	display: inline-block;
+	padding: 7px;
+/*	margin-left: -4px;*/
+}
+
+
+/**
+* Main content tiles 
+**/
+
+.tiles-container {
+	flex: 1;
+/*	background-color: teal;*/
+	display: flex;
+	flex-wrap: wrap;
+	padding: 4px;
+}
+
+.tile-content {
+	background-color: #8BD053;
+/*	display: inline-block;*/
+	padding-left: 4px;
+	
+}
+
+.tile-content div {
+	color: #41711F;
+}
+
+.tile {
+	/*background-color: pink;*/
+	width: calc(33.33% - 10px);
+	margin: 5px;
+}
+
+.tile-image {
+	height: 166px;
+	background-color: yellow;	
+}
+
+.puppy-caption {
+	background-color: #E3EFD9;
+	display: inline-block;
+	padding-left: 7px;
+	margin-left: -4px;
+}
+
+.tile-names {
+	padding-left: 3px;
+}
